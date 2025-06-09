@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato</title>
+  <link rel="stylesheet" href="styles1/styles1.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Vida e Paz</div>
+    <nav>
+      <ul>
+        <li><a href="1index.html">Inicio</a></li>
+        <li><a href="2contato.html" class="active">Contato</a></li>
+        <li><a href="3sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contato</h1>
+    <p>"Uma vida não questionada não merece ser vivida."
+      Esta frase enfatiza a importância da reflexão e da busca pelo conhecimento, pois a vida deve ser vivida de forma consciente e crítica. Platão
+    </p>
+
+    <!-- aqui contato nao esqucer -->
+    <section class="contact-info">
+      <h2>Fale Conosco</h2>
+      <p><strong>Email:</strong> luisfsl123@gmail.com</p>
+      <p><strong>Telefone:</strong> (11) 97063-7998</p>
+      <p><strong>Endereço:</strong> Estrada do Rio dentro, São Paulo - SP</p>
+      <h3>Deixe sua opinião sobre o site:</h3>
+      <textarea id="userFeedback" rows="5" placeholder="Fale oque achou do site."></textarea><br />
+      <button id="sendFeedback">Enviar Feedback</button>
+     <!---  cor da mensagem depois que clicar no botão  --->
+      <p id="feedbackMessage" style="color: green; display: none; margin-top: 10px;"></p>
+    </section>
+  </main>
+     <script>
+    // Script refeito pelo gpt estudar mais sobre, script da mensagem 
+    document.getElementById('sendFeedback').addEventListener('click', () => {
+      const feedback = document.getElementById('userFeedback').value.trim();
+
+      if(feedback.length === 0) {
+        alert('Por favor, escreva algo antes de enviar seu feedback.');
+        return;
+      }
+
+
+      document.getElementById('feedbackMessage').textContent = 'Obrigado pelo seu feedback!';
+      document.getElementById('feedbackMessage').style.display = 'block';
+
+    
+      document.getElementById('userFeedback').value = '';
+    });
+  </script>
+</body>
+</html>
+

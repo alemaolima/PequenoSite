@@ -1,0 +1,100 @@
+
+*{ margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+body {font-family: 'Segoe UI',sans-serif;
+  background: #7bbbec;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;}
+header {display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px 30px;
+  color: rgb(3, 2, 2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;}
+header .logo {font-weight: 700;
+  font-size: 1.8rem;}
+nav ul {list-style: none;
+  display: flex;
+  gap: 25px;}
+nav ul li a {color: rgb(10, 9, 9);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;}
+nav ul li a:hover,
+nav ul li a.active {background-color: hwb(202 31% 1%);}
+main {max-width: 700px;
+  margin: 0 auto;
+  background: rgb(255, 254, 254);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
+h1 {margin-bottom: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;}
+main p {font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+  text-align: center;}
+/* parte feedback 6:51 */
+.contact-info {
+  margin-top: 40px;}
+.contact-info h2 {font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #34495e;
+  text-align: center;
+  font-weight: 700;}
+.contact-info p {font-size: 1rem;
+  margin: 8px 0;
+  text-align: center;
+  color: #444;}
+.contact-info h3 {margin-top: 30px;
+  font-weight: 600;
+  color: #34495e;
+  text-align: center;
+  margin-bottom: 12px;}
+#userFeedback {width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.8px solid #ccc;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+  font-family: inherit;
+  min-height: 120px;
+  display: block;
+  margin: 0 auto 20px auto;}
+#userFeedback:focus {border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 8px rgba(74,144,226,0.6);}
+/* cor do botaozinho  feedback*/
+#sendFeedback {display: block;
+  margin: 0 auto;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(74,144,226,0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;}
+#sendFeedback:hover {background-color: #2c5bbf;
+  box-shadow: 0 8px 15px rgba(44,91,191,0.6);}
+#feedbackMessage {text-align: center;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #27ae60; 
+  font-size: 1rem;}
+@media (max-width: 600px) 
+{main {padding: 20px;}nav ul {gap: 15px;}}
+
